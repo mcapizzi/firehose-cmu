@@ -1,10 +1,16 @@
-<div class = "ice-box">
+<div class = "ice-box span6 offset3 text-center">
+	<h1 class = "awesome-sauce">
+		Share your yoga logo
+	</h1>
+
+	<br/>
+
 	<%= simple_form_for @pic do |f| %>
-		<%= f.input :title %>
-		<%= f.input :message %>
-		<%= f.input :who %>
+		<%= f.input :title, label:'Provide the name of studio' ,placeholder:'e.g. Yoga Flow Pittsburgh' %>
+		<%= f.input :message, label:'Explain why you like the design' %>
+		<%= f.input :who, label: 'Who is this' %>
 
 
-		<%= f.submit "save" %>
+		<%= f.submit "Save", :class => 'btn btn-warning btn-large' %>
 	<% end %>
 </div>
